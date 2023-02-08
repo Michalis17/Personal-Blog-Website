@@ -1,0 +1,114 @@
+.content-box {
+  grid-area: main/articles;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*Article Content*/
+.article-content {
+  margin: 25px 10px 100px 10px;
+}
+.post-title {
+  margin-bottom: 25px;
+  border-bottom: 2px solid lightgray;
+}
+.content {
+  margin-bottom: 15px;
+}
+
+/*Author Section*/
+.author-card {
+  border-radius: 20px;
+  background-color: lightgray;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 3px #ff0000;
+  margin-top: 106px;
+  height: 320px;
+}
+.author-img{
+  border-radius: 100%;
+  width: 200px;
+  height: 195px;
+  border: 5px solid black;
+  position: relative;
+  bottom: 102px;
+}
+.author-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  bottom: 91px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 65%;
+  font-size: 25px;
+}
+
+/*medium screens*/
+@media (min-width: 600px) and (max-width:900px) {
+  .content-box {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/*large screens*/
+@media (min-width:901px) {
+  .content-box {
+    grid-area: main/articles;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .article-content{
+    width: 60%;
+    margin-bottom: 200px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .author-info {
+    position: relative;
+    bottom: 130px;
+  }
+  .author-card {
+    border-radius: 20px;
+    background-color: lightgray;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 3px #ff0000;
+    margin-top: 106px;
+    height: 320px;
+  }
+  .author-img{
+    border-radius: 100%;
+    width: 200px;
+    height: 195px;
+    border: 5px solid black;
+    position: relative;
+    bottom: 102px;
+  }
+  .author-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 91px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
